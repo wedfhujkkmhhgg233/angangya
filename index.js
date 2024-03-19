@@ -10,7 +10,7 @@ const wss = new WebSocket.Server({ port: 8080 }); // WebSocket server
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
+app.use(express.static('index.html'));
 
 let timer = null;
 let requestCount = 0;
